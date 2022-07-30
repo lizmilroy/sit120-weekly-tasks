@@ -14,7 +14,6 @@
     </head>
 
     <body>
-        <!--Section containing the website header. Also contains the navigation for the website.-->
         <div class="main-header">
             <header>
                 <h1>Liz's Website</h1>
@@ -59,6 +58,17 @@
                         <td>Introduction to Responsive Web Apps</td>
                     </tr>
                 </table>
+            
+                <div id="vue-application">
+                    <h2>Vue Application</h2>
+                    <div id="vue-application"></div>
+                    <p>Are you having fun?</p>
+                        <div 
+                        v-for="todo in todos" :key="todo.title" :style="{ textDecoration: todo.checked? 'line-through':'none' }">
+                        <input type="checkbox" v-model="todo.checked" />
+                        {{ todo.title }}
+                        </div>
+                </div>
             </div>
 
             <div class="second-section">
@@ -69,7 +79,7 @@
                     <p>This is a photo of my cat Jager.</p>
                 </div>
                 <div class="jager-image">
-                    <img src="jager.jpg" alt="Jager" style="width: 300px; height:400px;">
+                    <img src="jager.jpg" alt="Jager" style="width: 300px; height:400px; border: 2px solid black;">
                 </div>
             </div>
         </div>
@@ -85,4 +95,7 @@
             </footer>
         </div>
     </body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="todo.js"></script>
 </html>

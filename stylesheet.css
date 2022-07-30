@@ -20,9 +20,12 @@
 }
 
 .first-section {
+
     background-color: lightpink;
     width: 800px;
     padding: 10px;
+    border: 2px solid black;
+    border-right: 0px;
 }
 
 .second-section {
@@ -31,6 +34,7 @@
     background-color: lightgreen;
     width: 400px;
     padding: 10px;
+    border: 2px solid black;
 }
 
 .jager-image {
@@ -44,8 +48,18 @@
     padding: 5px;
 }
 
+.main-header {
+    border: 2px solid black;
+    border-bottom: 0px;
+}
+
+.main-footer {
+    border: 2px solid black;
+    border-top: 0px;
+}
 
 body {
     width: 1200px;
     background-color: lightgray;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

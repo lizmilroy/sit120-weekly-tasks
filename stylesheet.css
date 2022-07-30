@@ -1,0 +1,51 @@
+.main-content {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+}
+
+.nav-list li {
+    border: 2px solid darkcyan;
+    border-radius: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.first-section {
+    background-color: lightpink;
+    width: 800px;
+    padding: 10px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgreen;
+    width: 400px;
+    padding: 10px;
+}
+
+.jager-image {
+    display:flex;
+    justify-content: center;
+}
+
+.main-header, .main-footer {
+    text-align: center;
+    background-color: lightblue;
+    padding: 5px;
+}
+
+
+body {
+    width: 1200px;
+    background-color: lightgray;
+}

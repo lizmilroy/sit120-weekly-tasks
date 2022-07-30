@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Liz Milroys Website</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <style>
+            th, td {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Section containing the website header. Also contains the navigation for the website.-->
+        <div class="main-header">
+            <header>
+                <h1>Liz's Website</h1>
+                <p>Created for SIT120 Weekly Practicals</p>
+
+                <div class="main-navigation">
+                    <nav>
+                        <ul class="nav-list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="main-content">
+            <div class="first-section">
+                <h2>Introduction</h2>
+                <p>This table outlines the units I am taking in my second trimester of study at Deakin University.</p>
+
+                <table border="1px solid black" style="border-collapse: collapse;"> 
+                    <tr>
+                        <th>Unit Code</th>
+                        <th>Unit Name</th>
+                    </tr>
+                    <tr>
+                        <td>MIS201</td>
+                        <td>Business Requirements Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>SIT102</td>
+                        <td>Introduction to Programming</td>
+                    </tr>
+                    <tr>
+                        <td>SIT103</td>
+                        <td>Data and Information Management</td>
+                    </tr>
+                    <tr>
+                        <td>SIT120</td>
+                        <td>Introduction to Responsive Web Apps</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="second-section">
+                <div class="second-section-content">
+                    <h2>About Me</h2>
+                    <p>I have a <a href="https://github.com/lizmilroy">GitHub</a> account, and I have a 
+                        profile on <a href="https://www.linkedin.com/in/elizabeth-milroy/">LinkedIn</a>.</p>
+                    <p>This is a photo of my cat Jager.</p>
+                </div>
+                <div class="jager-image">
+                    <img src="jager.jpg" alt="Jager" style="width: 300px; height:400px;">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer">
+            <footer> 
+                <p>Thank you for visiting my website.</p>
+                <p id="click">You should click this button :)</p>
+
+                <div id="button">
+                    <button onclick="document.getElementById('click').innerHTML = 'You clicked the button!'">Button</button>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

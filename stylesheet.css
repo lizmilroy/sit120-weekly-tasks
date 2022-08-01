@@ -1,3 +1,8 @@
+body {
+    border: 2px solid black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .main-content {
     display: flex;
 }
@@ -9,57 +14,109 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-list li {
-    border: 2px solid darkcyan;
-    border-radius: 7px;
+    border: 2px solid black;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 3px;
 }
 
-.first-section {
-
-    background-color: lightpink;
-    width: 800px;
-    padding: 10px;
-    border: 2px solid black;
-    border-right: 0px;
-}
-
-.second-section {
-    display: flex;
-    flex-direction: column;
-    background-color: lightgreen;
-    width: 400px;
-    padding: 10px;
-    border: 2px solid black;
-}
-
-.jager-image {
-    display:flex;
-    justify-content: center;
-}
+ .second-section img {
+    width: 100%;
+ }
 
 .main-header, .main-footer {
     text-align: center;
     background-color: lightblue;
-    padding: 5px;
+    padding: 10px;
 }
 
 .main-header {
-    border: 2px solid black;
-    border-bottom: 0px;
+    border-bottom: 2px solid black;
 }
 
 .main-footer {
-    border: 2px solid black;
-    border-top: 0px;
+    border-top: 2px solid black;
 }
 
-body {
-    width: 1200px;
-    background-color: lightgray;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.second-section {
+    background-color: lightgreen;
+    padding: 10px;
+    flex: 30%;
 }
+
+.first-section {
+    background-color: lightpink;
+    padding: 10px;
+    flex: 70%;
+    border-right: 2px solid black;
+}
+
+/* Canvas */
+.col1, .col2 {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    align-items: center;
+    padding: 10px;
+}
+
+.col1 {
+    background-color: pink;
+    border-right: 2px solid black;
+}
+
+.col2 {
+    background-color: lightgreen;
+
+}
+
+iframe, video, canvas, audio {
+    max-width: 100%;
+}
+
+
+@media (min-width: 1201px) {
+    body { 
+        font-size: 1.2em;
+    }
+
+    .nav-list{
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 1200px ) {
+    body { 
+        font-size: 1.1em;
+    }
+    .nav-list{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 740px)  {
+    .main-content{
+        flex-direction: column;
+    }
+
+    .first-section {
+        border-bottom: 2px solid black;
+        border-right: 0px;
+    }
+
+    .nav-list{
+        gap: 1rem;
+    }
+
+    .col1 {
+        border-right: 0px;
+        border-bottom: 2px solid black;
+    }
+}
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="canvas">
+    <head>
+        <title>Canvas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    </head>
+
+    <body> 
+        <div class="main-header">
+            <header>
+                <h1>Liz's Website</h1>
+                <p>Graphics, Media, and API's</p>
+
+                <div class="main-navigation">
+                    <nav>
+                        <ul class="nav-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="canvas.html">Canvas</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+
+        <div class="main-content">
+            <div class="col1">
+                <div class="row1">
+                    <h2>Canvas</h2>
+                    <div class="canvas">
+                        <canvas id="myCanvas" height="100" width="400" style="border: 2px solid black">
+                        </canvas>
+                    </div>
+
+                </div>
+                
+                <div class="row2"> 
+                    <h2>Video</h2>
+                    <div class="video">
+                        <video width="400" height="240" controls>
+                            <source src="cookies.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col2">
+                <div class="row1">
+                    <h2>YouTube</h2>
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <h2>Audio</h2>
+                    <div class="audio">
+                        <audio controls>
+                            <source src="block me out.flac" type="audio/flac">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-footer">
+            <footer> 
+                <p>Thank you for visiting my website.</p>
+                <p id="click">You should click this button :)</p>
+                <div id="button">
+                    <button onclick="document.getElementById('click').innerHTML = 'You clicked the button!'">Button</button>
+                </div>
+            </footer>
+        </div>
+    </body>
+    
+<script src="./script.js"></script>
+</html>

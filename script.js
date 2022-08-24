@@ -32,8 +32,8 @@ console.log(num.concat(sithLords));
 
 //Week 3 Task 3
 const currentDate= new Date(Date.now());
-console.log(currentDate.toDateString());
 console.log(currentDate.getDay());
 console.log(currentDate.getMonth());
 console.log(currentDate.getFullYear());
+console.log(currentDate.toDateString());
 console.log(currentDate.toUTCString());

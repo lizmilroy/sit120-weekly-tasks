@@ -61,7 +61,7 @@ body {
     padding-top: 10px;
 }
 
-#app-1, #app-2, #app-3, #app-4, #app-5, #app-6 {
+#app-1, #app-2, #app-3, #app-4, #app-5, #app-6, #app-7, #app-8 {
     flex: 50%;
     padding-bottom: 10px;
 }
@@ -76,7 +76,7 @@ body {
     width: 100%;
  }
 
-
+ 
 /* Canvas */
 .col1, .col2 {
     display: flex;
@@ -144,6 +144,3 @@ iframe, video, canvas, audio {
         border-bottom: 2px solid black;
     }
 }
-
-
-

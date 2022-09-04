@@ -47,3 +47,30 @@ var app5 = new Vue ({
         ]
     }
 });
+
+var app6 = new Vue ({
+    el: '#app-7',
+    data: {
+        user: '',
+        pass: ''
+    }
+});
+
+var app7 = new Vue({
+    el: '#app-8',
+    data: {
+      checked: []
+    }
+})
+
+var app8 = new Vue({
+    el: '#app-9',
+    data: {
+        selected: '',
+        options: [
+            { text: 'Green', value: 'Green'},
+            { text: 'Blue', value: 'Blue'},
+            { text: 'Red', value: 'Red'}
+        ]
+    }
+})

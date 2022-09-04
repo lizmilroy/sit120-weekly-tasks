@@ -71,6 +71,7 @@
                             {{ todo.title }}
                             </div>
                     </div>
+                    
                     <div id="app-2">
                         <h3>Hello World</h3>
                         {{ message }}
@@ -105,6 +106,43 @@
                             </li>
                         </ol>
                     </div>
+
+                    <div id="app-7">
+                        <h3>v-model</h3>
+                        <span>Enter your Username:</span>
+                        <input type="text" v-model="user" />
+                        <p>Username: {{ user }}</p>
+                        <p></p>
+                        <span>Enter your Password:</span>
+                        <input type="password" v-model="pass" />
+                        <p>Password: {{ pass }}</p>
+                    </div>
+
+                    <div id="app-8">
+                        <h3>Checklist</h3>
+                            <div>
+                                <input type="checkbox" id="green" value="Green" v-model="checked">
+                                <label for="green">Green</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="blue" value="Blue" v-model="checked">
+                                <label for="blue">Blue</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="red" value="Red" v-model="checked">
+                                <label for="red">Red</label>
+                            </div>
+                        <p>Checked: {{ checked }}<p>
+                    </div>
+
+                    <div id="app-9">
+                        <h3>Conditional Rendering (v-for)</h3>
+                        <select v-model="selected">
+                            <option value="" disabled>Select one of the following</option>
+                            <option v-for="option in options" v-bind:value="option.value"> {{ option.text }}</option>
+                        </select>
+                        <p>Selected: {{ selected }}</p>
+                    </div>
                 </div>
             </div>
 
@@ -123,7 +161,6 @@
             <footer> 
                 <p>Thank you for visiting my website.</p>
                 <p id="click">You should click this button :)</p>
-
                 <div id="button">
                     <button onclick="document.getElementById('click').innerHTML = 'You clicked the button!'">Button</button>
                 </div>

@@ -143,6 +143,44 @@
                         </select>
                         <p>Selected: {{ selected }}</p>
                     </div>
+
+                    <div id="app-10">
+                        <h3>Components</h3>
+                        <p>Global:<global></global></p>
+                        <p>Local: <local></local> <local></local></p>
+                    </div>
+
+                    <div id ="app-11">
+                        <h3>Props</h3>
+                        <p><props1 v-for="song in songs" v-bind:key="song.id " v-bind:song="song"></props1></p>
+                    </div>
+
+                    <div id="app-12">
+                    <h3>Events</h3>
+                        <div :style="{ fontSize: mynameFontSize + 'em' }">
+                             <events :myname="myname" v-on:enlarge-text="mynameFontSize += 0.1"></events>
+                         </div>
+                    </div>
+
+                    <div id="slots">
+                        <h3>Slots</h3>
+                        <div id="slot-apps">
+                            <div id="app-13">
+                                <slots></slots>
+                            </div>
+
+                            <div id="app-14">
+                                <slots></slots>
+                            </div>
+
+                            <div id="app-15">
+                                <slots></slots>
+                            </div>
+                        </div>
+                    </div>
+              
+               
+
                 </div>
             </div>
 
@@ -172,3 +210,4 @@
 <script src="vue.js"></script>
 
 </html>
+
